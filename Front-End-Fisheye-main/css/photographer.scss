@@ -1,0 +1,129 @@
+#contact_modal {
+    display: none;
+}
+
+.photograph-header {
+    background-color: #FAFAFA;
+    height: 300px;
+    margin: 0 100px;
+}
+
+.contact_btn {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 11px;
+    width: 170px;
+    height: 70px;
+    border: none;
+    background-color: #901C1C;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal {
+    border-radius: 5px;
+    background-color: #DB8876;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+    margin: auto;
+}
+
+.modal header {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.modal header img {
+    cursor: pointer;
+}
+
+.modal header h2 {
+    font-size: 64px;
+    font-weight: normal;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label {
+    color: #312E2E;
+    font-size: 36px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: self-start;
+    margin-bottom: 26px;
+}
+
+form input {
+    width: 100%;
+    height: 68px;
+    border: none;
+    border-radius: 5px;
+}
+
+.photographer_detail{
+    width: 10rem;
+    height: 5rem;
+    .photographer-img {
+        width: 100%;
+    }
+}
+
+.personnal_galerie{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 44rem;
+    margin: 2rem 2rem;
+    height: 50rem;
+    p{
+        padding: 0 2rem;
+        margin: 0;
+    }
+}
+
+.mediaImg{
+    object-fit: cover;
+    width: 20rem;
+    height: 20rem;
+    margin: 2rem 0;
+    padding: 2rem;
+}
+
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+  }
+  
+#lightbox.active {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#lightbox img {
+max-width: 90%;
+max-height: 80%;
+padding: 4px;
+background-color: black;
+border: 2px solid white;
+}
